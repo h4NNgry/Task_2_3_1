@@ -38,7 +38,7 @@ public class UserController {
         model.addAttribute("user", userService.getUserById(id));
         return "delete";
     }
-    //--
+
     @DeleteMapping("users/{id}")
     public String removeUser(@PathVariable("id") int id) {
         userService.removeUser(id);
